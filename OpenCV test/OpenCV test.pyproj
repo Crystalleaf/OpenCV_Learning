@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d46d7347-cee2-461d-adc6-14f45d224fb7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>TestSimpleFaceRec.py</StartupFile>
+    <StartupFile>TestMouseAsPaintBrush.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,6 +24,15 @@
   <ItemGroup>
     <Compile Include="OpenCV_test.py" />
     <Compile Include="test0308.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestDrawingFunctions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestMouseAsPaintBrush.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestMouseAsPaintBrush2.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="TestSimpleFaceRec.py">
