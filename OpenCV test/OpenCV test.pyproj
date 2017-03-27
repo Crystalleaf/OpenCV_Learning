@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d46d7347-cee2-461d-adc6-14f45d224fb7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>TestMouseAsPaintBrush.py</StartupFile>
+    <StartupFile>3.1 BasicOperation.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,22 +22,31 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="OpenCV_test.py" />
-    <Compile Include="test0308.py">
+    <Compile Include="3.1 BasicOperation.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TestDrawingFunctions.py">
+    <Compile Include="1 OpenCV_test.py" />
+    <Compile Include="1.2 test0308.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TestMouseAsPaintBrush.py">
+    <Compile Include="2.2 TestDrawingFunctions.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TestMouseAsPaintBrush2.py">
+    <Compile Include="2.3 TestMouseAsPaintBrush.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TestSimpleFaceRec.py">
+    <Compile Include="2.4 TestMouseAsPaintBrush2.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="2.1 TestSimpleFaceRec.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="2.5 TrackbarAsColorPalette.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1.jpg" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
