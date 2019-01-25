@@ -5,13 +5,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d46d7347-cee2-461d-adc6-14f45d224fb7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>3.2 ArithmeticOperations.py</StartupFile>
+    <StartupFile>10.2 CannyTestLine.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>OpenCV test</Name>
     <RootNamespace>OpenCV test</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.6-32</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +23,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="10.1 CannyTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="10.2 CannyTestLine.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="3.1 BasicOperation.py">
       <SubType>Code</SubType>
     </Compile>
@@ -52,12 +59,12 @@
     <Content Include="1.jpg" />
     <Content Include="2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6-32" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
-    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
-  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
-  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
        Visual Studio and specify your pre- and post-build commands in
        the BeforeBuild and AfterBuild targets below. -->
@@ -66,4 +73,5 @@
   </Target>
   <Target Name="AfterBuild">
   </Target>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>
